@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>C# Serial Listener with Write / Reply / Loop write capabilities</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>About: </b> Initially this program was designed to perform a more specific task with the serial port for
+            testing specific hardware. I have tried to make it more general purpose and make it configurable.
+        </p>
+        <p>
+            Written in C# the program utilizes the system.IO functions for access to the serial port. The listener
+            function subscribes to an event fired when data is received on the port. The program has an option to 
+            send a reply string every time data is received on the port. The write button can write just once, usually
+            used to write then wait for a reply. The looping functionality writes the string in the input box.
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <b>TODO: </b> 
+            <ul>
+                <li>Separate out the serial functions into a class. They are currently all just embeded in the form code.</li>
+                <li>Add stop button to halt loop write function.</li>
+                <li>Fix the form appearance and colors, I was messing around with it and haven't fixed it yet.</li>
+                <li>Add form variable to adjust delay in loop write function.</li>
+                <li>Add logging capabilities. Save screen dump to txt file, or perhaps database support.</li>
+            </ul>
+        </p>
+    </div>
+
+    <footer>Douglas Sappet dsappet@gmail.com</footer>
+</body>
+</html>
